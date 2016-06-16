@@ -1,0 +1,95 @@
+body {
+margin: 10px auto;
+/*background:url(../images/wood024.jpg);
+*/
+background:url(../images/abstract_storm_and_light.jpg) center right fixed;
+}
+#glass {
+margin: 0 auto;
+padding: 10px;
+width: 1010px;
+background: rgba(255, 255, 255,0.3);
+-webket-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+#container
+{
+	margin:0px auto;
+	width:980px;
+	height:auto;
+}
+.clear {
+clear: both;
+height: 1px;
+}
+#header
+{
+
+	
+	height:160px;
+	background-color:#999;
+}
+#firstheader
+{
+	
+	height:40px;
+	background:url(../images/bg_paper.gif);
+}
+#midheader
+{
+    height:80px;
+    background:url(../images/stillness-140x900.jpg) bottom  center;
+    box-shadow: 0px 0px 4px #000;
+    opacity: .70;
+    padding:0px 0px 10px 0px;
+
+}
+#thirdheader
+{
+	
+	height:40px;
+	background:url(../images/bg_paper.gif);
+}
+
+.leftlogo
+{
+	float:left;width:50%;
+}
+#maincontent
+{
+    width: 100%;
+	 margin-top:10px;
+     padding:0px 0px 10px 0px;
+	border-radius:2px;
+	box-shadow:0px 0px 1px 1px #333;
+	background: rgba(255, 255, 255,0.4);
+
+}
+#footer
+{
+	width: 980px;
+	height: 100px;
+
+
+   box-shadow: 0px 0px 4px #000;
+   box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+   
+   margin-top:10px;
+}
+input[type=button],input[type=submit],input[type=reset] {
+margin-right: 20px;
+margin-top: 20px;
+width: 80px;
+height: 30px;
+font-size: 14px;
+font-weight: bold;
+color: #fff;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 20, 12, 0.75)), to(#6ec2e8));
+background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+border-radius: 30px;
+border: 1px solid #66add6;
+box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
+cursor: pointer;
+}

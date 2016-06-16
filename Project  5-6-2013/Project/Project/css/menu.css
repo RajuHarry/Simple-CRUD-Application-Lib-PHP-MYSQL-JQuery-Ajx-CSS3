@@ -1,0 +1,64 @@
+#nav {
+	background:url(../images/bg_paper.gif);
+    border-radius: 5px 5px 5px 5px;
+    display: table;
+    padding: 8px;
+    position: relative;
+	margin:auto;
+}
+#nav ul {
+    background-color: red;
+    border:1px solid red;
+    border-radius: 0 5px 5px 5px;
+    border-width: 0 1px 1px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    left: -9999px;
+    overflow: hidden;
+    padding: 20px 0 10px;
+    position: absolute;
+    top: -9999px;
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+    -moz-transition: -moz-transform 0.1s linear;
+    -ms-transition: -ms-transform 0.1s linear;
+    -o-transition: -o-transform 0.1s linear;
+    -webkit-transition: -webkit-transform 0.1s linear;
+    transition: transform 0.1s linear;
+}
+#nav li {
+    float: left;
+    position: relative;
+	list-style-type:none;
+    margin:0px 10px;
+}
+#nav li a {
+    color: #C60;
+    display: block;
+    font-size: 14px;
+    padding: 2px 7px;
+    text-decoration: none;
+}
+#nav li:hover > a,#nav li a:active{
+background: rgba(255, 255, 255,0.1);
+    box-shadow: 0px 0px 4px #000;
+
+    border-radius: 15px;
+    color: #900;
+}
+
+
+
+#nav ul li {
+    width: 100%;
+}
+

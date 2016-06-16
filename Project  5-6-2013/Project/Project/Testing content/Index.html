@@ -1,0 +1,141 @@
+<?php 
+session_start();
+ if($_SESSION['valid_user']=='') {
+ header("location:login.php");
+ }
+  
+mysql_connect("localhost","root","");
+mysql_select_db("cmanage");
+
+$sel=mysql_query("select * from student1");
+    
+    if(isset($_GET['id']))
+    {
+    $id = $_GET['id'];
+    $del_query="delete from student1 where id='$id'";
+    $delete = mysql_query($del_query);
+    header('location:san.php');
+    
+    }           
+
+?>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="css/logo.css" />
+
+
+<style type="text/css">
+
+
+</style>
+
+
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+
+<div id="firstheader">
+<ul id="nav">
+                <li><a href="Index.php">Home</a></li>
+                <li><a href="studentadd.php">Student</a></li>
+                <li><a href="staffadd.php">Staff</a></li>
+                <li><a href="#">E-Library</a></li>
+                <li><a href="aboutus.php">About us</a></li>
+                <li><a href="feedback.php">feedback</a></li>
+
+            </ul>
+
+
+</div>
+<div id="midheader">
+		<div style="width:100%">
+			<div class="leftlogo">
+				<h1 style="margin:0px;padding:20px 10px 0px;text-shadow: 0px 0px 5px #FFF; ">College Management</h1>
+			</div>
+			<div class="leftlogo">
+				<h1 style=" color:#FFF;float:right; padding:0px 10px 0px;text-shadow: 0px 0px 5px #000; ">Admin Panel</h1>
+			</div>
+		</div>
+</div>
+
+<div id="thirdheader">
+
+<span style="color:#FFF;float:right; padding:10px 10px 0px;text-shadow: 0px 0px 5px #000;"><a href="#" style="text-decoration:none; color:#FFF;">Logout</a></span>
+</div>
+
+
+</div>
+<div id="maincontent">
+
+<h2 style=" color:#FFF; padding:10px 10px 0px;text-shadow: 0px 0px 5px #000; ">Student Record</h2>
+
+
+<table id='tbl' align="center" cellpadding="10" border="0">
+<thead>        
+  <tr>
+    <th class="checkbox">ID</th>
+    <th>First Name</th>
+    <th>Middle Name</th>
+    <th>Surname</th>
+    <th>DOB</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Year</th>
+    <th class="checkbox">Other Details</th>
+    <th class="checkbox">Edit</th>
+    <th class="checkbox">Delete</th>
+    
+  </tr> 
+  </thead>
+  <tbody> 
+    <?php
+          while($row = mysql_fetch_array($sel))
+          
+          {
+  ?>
+  <tr>
+    <td>
+      <?php echo $row['id']; ?>
+    </td>
+    <td><?php echo $row['fname']; ?></td>
+    <td><?php echo $row['mname']; ?></td>
+    <td><?php echo $row['lname']; ?></td>
+    <td>11-FEB-1991</td>
+    <td>prashnt.pawar@gmail.com</td>
+   <td><?php echo $row['phone']; ?></td>  
+    <td>T.Y.Bsc.(I.T.)</td>
+    <td><a href="#"><img src="images/vcard.png" title="Other Details" alt="Other Details" class="icondetail"/></td>
+    <td><a href="#"><img src="images/Edit.png" title="Edit" alt="Edit"  class="iconimg"/></td>
+    <td><a onclick="return del();" href="san.php?id=<?php echo $row['id']; ?>"><img src="images/del7.png" title="Delete" alt="Delete" class="iconimg"/></td>
+       
+  </tr>
+         <?php
+          
+          }
+  
+  ?>
+
+<?php
+
+  $sel=mysql_query("select * from staff");   
+?>
+  </tbody>
+</table>
+    
+   <center> <a href="Adddata.php">   <input type="button" value="ADD" name="add" style="padding:10px 20px; margin:20px 0px;" /> </a></center>
+
+</div>
+
+
+
+</div>
+</body>
+</html>

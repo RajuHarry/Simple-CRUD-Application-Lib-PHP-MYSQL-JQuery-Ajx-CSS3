@@ -1,0 +1,49 @@
+<!--
+.pagNumActive {
+    color: #636;
+	background: rgba(255, 255, 255,0.1);
+    box-shadow: 0px 0px 4px #000;
+    border:#060 0px solid; background: rgba(255, 255, 255,0.1); padding-left:3px; padding-right:3px;
+}
+.paginationNumbers a:link {
+    color: #000;
+    text-decoration: none;
+    border:#999 1px solid; background-color:#F0F0F0; padding-left:3px; padding-right:3px;
+}
+.paginationNumbers a:visited {
+    color: #000;
+    text-decoration: none;
+    border:#999 1px solid; background-color:#F0F0F0; padding-left:3px; padding-right:3px;
+}
+.paginationNumbers a:hover {
+    color: #903;
+    text-decoration: none;
+    border:#060 1px solid; background: rgba(255, 255, 255,0.1); padding-left:3px; padding-right:3px;
+}
+.paginationNumbers a:active {
+    color: #000;
+    text-decoration: none;
+    border:#999 1px solid; background-color:#F0F0F0; padding-left:3px; padding-right:3px;
+}
+-->
+page_links
+ {
+  font-family: arial, verdana;
+  font-size: 12px;
+  border:1px #000000 solid;
+  padding: 6px;
+  margin: 3px;
+  background-color: #cccccc;
+  text-decoration: none;
+ }
+ #page_a_link
+ {
+  font-family: arial, verdana;
+  font-size: 12px;
+  border:1px #000000 solid;
+  color: #ff0000;
+  background-color: #cccccc;
+  padding: 6px;
+  margin: 3px;
+  text-decoration: none;
+ }

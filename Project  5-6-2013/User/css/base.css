@@ -1,0 +1,76 @@
+/* Curtain.js - Example page */
+
+/* Google Font */
+@import url(http://fonts.googleapis.com/css?family=PT+Serif|PT+Sans+Narrow:700|PT+Sans);
+
+
+/* RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after { content:"";display:table; }
+.cf:after { clear:both; }
+.cf { zoom:1;}
+
+/* Base Style */
+
+
+h1,h2,h3{font-family: 'PT Sans Narrow', sans-serif;font-weight:bold;text-transform: uppercase;}
+h4{font-family: 'PT Sans', sans-serif;font-weight:bold;}
+h4{ font-size:20px; margin:1em 0 0; }
+p{min-height:1px;}
+strong{font-weight:bold;}
+hr{background: #333;border: 0;height: 2px;margin: 12px auto 8px;width: 60px;}
+
+a{color:#1074ce;text-decoration:none;}
+a:hover{color:#0a487f;}
+
+
+
+
+/* Sliding panels */
+.curtains>li {
+    background:#FFF url(../images/img/blizzard.png);
+    box-shadow:0 0 12px #666;
+}
+    .curtains>li:last-child{box-shadow:none}
+
+
+
+/* Section 1 */
+
+#section-1{
+    background:url(../images/img/eiffel-2.jpg) 50% 0 no-repeat;
+    background-size:cover;
+}
+
+    #section-1 header{
+        color:#FFF;
+        position:absolute;
+        top:30%;
+        left:50%;
+        margin:0 0 0 -350px;
+        width:700px;
+        text-align:center;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+        line-height:1.1;
+    }
+
+    #section-1 h1{
+        font-size:80px;
+    }
+
+    #section-1 h2{
+        text-transform:capitalize;
+        opacity:.75;
+        font-size:48px;
+    }
+
+/* Section 2 */
+#section-2{
+}
+
+
+/* Section 3 */

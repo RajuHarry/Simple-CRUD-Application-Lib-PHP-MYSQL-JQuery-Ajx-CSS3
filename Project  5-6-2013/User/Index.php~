@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" href="css/menu.css" />
+
+<style type="text/css">
+body {
+margin: 0px auto;
+
+}
+
+#container
+{
+	width:980px;
+	margin:auto;
+}
+#header
+{
+	width:980px;
+	margin:auto;
+	height:160px;
+	background-color:#999;
+}
+
+
+.leftlogo
+{
+	float:left;width:50%;
+}
+
+
+
+.outer_container {
+    
+	height: 48px;
+    position: relative;
+}
+
+.demo
+{
+	width:49px;
+	margin:auto;
+	
+}
+#piemenuheader
+{
+	
+	background-color:#CCC;
+	height:auto;
+	width: 100%;
+	margin-top:10px;
+   padding:0px 0px 10px 0px;
+	border-radius:2px;
+	box-shadow:0px 0px 1px 1px #333;
+	background: rgba(255, 255, 255,0.4);
+}
+
+
+/*Flipbook css*/
+
+
+
+#bookheader
+{
+	padding:20px;
+	background-color:#FCC;
+
+    width: 700px;
+    background-color: #999;
+    box-shadow: 0px 0px 4px #000;
+    box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+    opacity: .95;
+
+}
+
+#book{
+	width:700px;
+	height:400px;
+	margin:auto;
+	
+}
+
+#book .turn-page{
+	background-color:white;
+}
+
+#book .cover{
+	background:#333;
+}
+
+#book .cover h1{
+	color:white;
+	text-align:center;
+	font-size:50px;
+	line-height:500px;
+	margin:0px;
+}
+
+#book .loader{
+	background-image:url(loader.gif);
+	width:24px;
+	height:24px;
+	display:block;
+	position:absolute;
+	top:238px;
+	left:188px;
+}
+
+#book .data{
+	text-align:center;
+	font-size:40px;
+	color:#999;
+}
+
+#controls{
+	width:800px;
+	text-align:center;
+	margin:20px 0px;
+	font:30px arial;
+}
+
+#controls input, #controls label{
+	font:30px arial;
+}
+
+#book .odd{
+	background-image:-webkit-linear-gradient(left, #FFF 95%, #ddd 100%);
+	background-image:-moz-linear-gradient(left, #FFF 95%, #ddd 100%);
+	background-image:-o-linear-gradient(left, #FFF 95%, #ddd 100%);
+	background-image:-ms-linear-gradient(left, #FFF 95%, #ddd 100%);
+}
+
+#book .even{
+	background-image:-webkit-linear-gradient(right, #FFF 95%, #ddd 100%);
+	background-image:-moz-linear-gradient(right, #FFF 95%, #ddd 100%);
+	background-image:-o-linear-gradient(right, #FFF 95%, #ddd 100%);
+	background-image:-ms-linear-gradient(right, #FFF 95%, #ddd 100%);
+}
+</style>
+		<link rel="stylesheet" href="css/piemenu.css">
+      <link rel="stylesheet" href="css/mainbody.css" />
+</head>
+
+<body>
+<div id="glass">
+<div id="container">
+
+<div id="header">
+
+<?php
+ 
+ include('userheader.php');
+
+?>
+
+</div>
+
+<div id="piemenuheader">
+  <?php include('piemenu.php') ?>   
+</div>
+    <div id="maincontent">
+		
+        <div>
+        <h2 style=" color:#FFF; padding:10px 10px 0px;text-shadow: 0px 0px 5px #000; ">Welocome To College Management</h2>
+		</div>
+
+                <div id='leftpart'>Hello left</div>
+				 
+          <div id="rightpart"> <div id="bookheader">
+          <?php include('book.php') ?>   
+
+                </div>
+                </div>
+                <div class="clear"></div>
+        </div>
+        
+
+ 
+     <div id="footer"> 
+
+
+</div>
+</div>
+
+<!--Glass effect div end-->
+</div>
+
+</body>
+</html>

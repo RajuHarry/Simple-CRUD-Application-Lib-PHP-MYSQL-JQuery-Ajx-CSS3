@@ -1,0 +1,67 @@
+
+#tbl {
+	margin:auto;
+	width:95%;
+	position:relative;
+	box-shadow: 0px 0px 4px #000;
+    box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+	}
+	
+th
+{
+	text-align:left;
+}
+
+table th 
+{
+	background-color: #5d6677;
+	color: white;
+	text-transform: uppercase;
+	font-size:9px;
+	
+	
+}
+
+table tbody tr:nth-child(even) {background: #CCC}
+table tbody tr:nth-child(odd) {background: #FFF}
+td
+{
+	font-size:12px;
+}
+.checkbox
+{
+	width:25px;
+}
+.iconimg 
+{
+	margin-left:5px;
+	width:20px;
+	height:20px;
+}
+.icondetail
+{	
+	margin-top:0px;
+	margin-bottom:10px;
+	margin-left:5px;
+	width:25px;
+	height:25px;
+}
+
+
+/* tables */
+
+
+table.tablesorter thead tr .header {
+	background-image: url(../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(../images/asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(../images/desc.gif);
+}
+

@@ -1,0 +1,115 @@
+body {
+margin: 10px auto;
+/*background:url(../images/wood024.jpg);
+*/
+background:url(../images/abstract_storm_and_light.jpg) center right fixed;
+}
+#glass {
+margin: 0 auto;
+padding: 10px;
+width: 1010px;
+background: rgba(255, 255, 255,0.3);
+-webket-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+#container
+{
+	margin:0px auto;
+	width:980px;
+	height:auto;
+}
+
+
+/*
+#container
+{
+	width:980px;
+	margin:auto;
+}
+#header
+{
+	width:980px;
+	margin:auto;
+	height:160px;
+	background-color:#999;
+}
+*/
+
+.clear {
+clear: both;
+height: 1px;
+}
+#header
+{
+
+	
+	height:160px;
+	background-color:#999;
+}
+#firstheader
+{
+	
+	height:40px;
+	background:url(../images/bg_paper.gif);
+}
+#midheader
+{
+    height:80px;
+    background:url(../images/Lost%20Aura%20Abstract.jpg) center 455px   ;
+    box-shadow: 0px 0px 4px #000;
+    opacity: .70;
+    padding:0px 0px 10px 0px;
+
+}
+#thirdheader
+{
+	
+	height:40px;
+	background:url(../images/bg_paper.gif);
+}
+
+.leftlogo
+{
+	float:left;width:50%;
+}
+#maincontent
+{
+    width: 100%;
+	 margin-top:10px;
+     padding:0px 0px 10px 0px;
+	border-radius:2px;
+	box-shadow:0px 0px 1px 1px #333;
+	background: rgba(255, 255, 255,0.4);
+
+}
+#leftpart {
+    float: left;
+    width: 180px;
+/*    height: 30px;
+*/    margin-left: 15px;
+  /* box-shadow: 0px 0px 4px #000;
+    box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+    opacity: .95;*/
+}
+#rightpart {
+    float: left;
+    width: 750px;
+	height:auto;
+background: rgba(255, 255, 255,0.3);
+    box-shadow: 0px 0px 4px #000;
+    box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+    opacity: .95;
+    margin-left: 20px;
+}
+#footer
+{
+	width: 980px;
+	height: 100px;
+
+
+   box-shadow: 0px 0px 4px #000;
+   box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+   
+   margin-top:10px;
+}
